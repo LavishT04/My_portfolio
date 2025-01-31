@@ -929,7 +929,7 @@
               <!-- Reply Messages End -->
 
               <!-- Contact Form Start -->
-              <form class="form contact-form" id="contact-form">
+              <form class="form contact-form" id="contact-form" action="POST" data-netlify="true">
                 <!-- Hidden Required Fields -->
                 <input type="hidden" name="project_name" value="Starter Template">
                 <input type="hidden" name="admin_email" value="support@mixdesign.club">
@@ -953,6 +953,9 @@
                       <textarea name="Message" placeholder="A Few Words*" required></textarea>
                     </div>
                     <div class="col-12 form__item animate-in-up">
+                      <div data-netlify-recaptcha="true"></div>
+                    </div>
+                    <div class="col-12 form__item animate-in-up">
                       <button class="btn btn-default btn-hover btn-hover-accent" type="submit">
                         <span class="btn-caption">Send Message</span>
                         <i class="ph-bold ph-paper-plane-tilt"></i>
@@ -964,7 +967,7 @@
               <!-- Contact Form End -->
 
             </div>
-          </div> -->
+          </div>
           <!-- Content Block - Contact Form End -->
 
           <!-- Content Block - Socials Cards Start -->
